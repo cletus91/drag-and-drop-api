@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 
+:root {
+	--background-color-primary: #f1f1f1;
+	--background-color-secondary: #d3d1d1;
+	--border-color: #b3b3b3;
+	--text-color: #34444f;
+}
+
 * {
 	font-family: 'Syne Mono', monospace;
 	margin: 0;
@@ -7,8 +14,48 @@
 }
 
 body {
-	background-color: rgb(221, 227, 233);
+	background-color: var(--background-color);
 	margin: 0 auto;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
+	justify-content: flex-start;
+	height: 100vh;
+}
+
+.draggable-list {
+	border: 1px solid var(--border-color);
+	color: var(--text-color);
+	padding: 0;
+	list-style-type: none;
+}
+
+.draggable-list li {
+	background-color: var(--background-color-secondary);
+}
+
+.draggable-list li:not(:last-of-type) {
+	border-bottom: 1px solid var(--border-color);
+}
+
+.draggable-list .number {
+	background-color: var(--background-color-primary);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 28px;
+	height: 60px;
+	width: 60px;
+}
+
+.draggable-list .person {
+	margin: 0 20px 0 0;
+}
+
+.draggable {
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px;
 }
