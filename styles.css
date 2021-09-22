@@ -59,3 +59,32 @@ body {
 	justify-content: space-between;
 	padding: 10px;
 }
+
+.draggable-list li.right .person {
+	color: rgb(52, 153, 52);
+}
+
+.draggable-list li.wrong .person {
+	color: rgb(151, 33, 33);
+}
+
+.draggable-list li.over .draggable {
+	background-color: gray;
+}
+
+.btn-check {
+	background-color: var(--background-color-secondary);
+	padding: 10px 20px;
+	border: none;
+	margin: 10px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.btn-check:active {
+	transform: scale(0.93);
+}
+
+.btn-check:focus {
+	outline: none;
+}
