@@ -28,8 +28,8 @@ function createList() {
 			const listItem = document.createElement('li');
 			listItem.setAttribute('data-index', index);
 			listItem.innerHTML = `
-            <div class="draggable" draggable="true">
             <span class="number">${index + 1}</span>
+            <div class="draggable" draggable="true">
                 <p class="person">${person}</p>
                 <i class="fas fa-grip-lines"></i>
             </div>

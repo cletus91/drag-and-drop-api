@@ -32,6 +32,8 @@ body {
 
 .draggable-list li {
 	background-color: var(--background-color-secondary);
+	display: flex;
+	flex: 1;
 }
 
 .draggable-list li:not(:last-of-type) {
@@ -58,6 +60,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding: 10px;
+	flex: 1;
 }
 
 .draggable-list li.right .person {
@@ -69,7 +72,7 @@ body {
 }
 
 .draggable-list li.over .draggable {
-	background-color: gray;
+	background-color: rgb(121, 121, 121);
 }
 
 .btn-check {
